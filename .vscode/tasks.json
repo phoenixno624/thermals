@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "CMake: debug build",
+      "command": "cmake",
+      "args": ["-G", "Ninja", "-DCMAKE_BUILD_TYPE=Debug", "../.."],
+      "options": {
+        "cwd": "${workspaceFolder}/ninja/debug"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "CMake generate Ninja scripts for debug build."
+    },
+    {
+      "type": "shell",
+      "label": "Ninja: debug build",
+      "command": "ninja",
+      "args": ["-C", "${workspaceFolder}/ninja/debug"],
+      "options": {
+        "cwd": "${workspaceFolder}/ninja/debug"
+      },
+      "group": "build",
+      "detail": "Ninja debug build."
+    },
+    {
+      "label": "Build Debug",
+      "dependsOn": ["CMake: debug build", "Ninja: debug build"]
+    }
+  ],
+  "version": "2.0.0"
+}
