@@ -4,10 +4,10 @@
       "name": "Ninja: Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/ninja/debug/thermals",
+      "program": "${workspaceFolder}/build/thermals",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}/ninja/debug",
+      "cwd": "${workspaceFolder}/build",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
@@ -23,7 +23,7 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "Build Debug",
+      "preLaunchTask": "Ninja: build and debug",
       "miDebuggerPath": "/usr/bin/gdb"
     }
   ],
