@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "thermals.h": "c",
+        "nl_types.h": "c",
+        "string.h": "c",
+        "types.h": "c"
+    }
+}
