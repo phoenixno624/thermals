@@ -13,12 +13,12 @@ int main(void)
     for (const auto &sensor : sensors)
     {
         cout << "Sensor: " << sensor.label
-             << "-------------\n";
-        cout << "Temperature (C): " << sensor.temperature << "\n";
-        cout << "Critical (C): " << sensor.critical << "\n";
-        cout << "Emergency (C): " << sensor.emergency << "\n";
-        cout << "Min (C): " << sensor.min << "\n";
-        cout << "Max (C): " << sensor.max << "\n";
-        cout << "Alarm (C): " << sensor.alarm << "\n\n";
+             << "-------------\n"
+             << "Temperature (C): " << sensor.temperature << '\n'
+             << "Critical (C): " << sensor.critical << '\n'
+             << "Emergency (C): " << sensor.emergency << '\n'
+             << "Min (C): " << sensor.min << '\n'
+             << "Max (C): " << sensor.max << '\n'
+             << "Alarm (C): " << sensor.alarm << "\n\n"
     }
 }
